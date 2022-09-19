@@ -24,7 +24,7 @@ export function Home() {
   }
 
   useEffect(() => {
-    fetch('http://iplocalhostbackendnumber:3333/games')
+    fetch('http://ip-backend:3333/games')
     .then(response => response.json())
     .then(data => setGames(data))
   }, [])
